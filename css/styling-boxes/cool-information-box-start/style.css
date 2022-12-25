@@ -3,3 +3,25 @@ html {
 }
 
 /* Your CSS below here */
+
+p{
+  /* box shadow */
+  /* a semi-transparent white shadow near the top left and */
+  /* a semi-transparent black shadow near the bottom right */
+  width: 200px;
+  line-height: 3em;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 1px black;
+  background-color: red;
+  color: white;
+  text-shadow: black 3px;
+  border-radius: 10px;
+  border: 1px solid brown;
+  background-image: linear-gradient(to top left, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 30%, rgba(0,0,0,0));
+  box-shadow: inset 2px 2px 3px rgba(255,255,255,0.6),
+  inset -2px -2px 3px rgba(0,0,0,0.6),
+  2px 2px 5px black;
+
+}
