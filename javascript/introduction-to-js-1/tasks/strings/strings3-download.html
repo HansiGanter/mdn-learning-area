@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Strings: Task 3</title>
     <style>
       p {
@@ -29,6 +30,9 @@
     const quote = 'I dO nOT lIke gREen eGgS anD HAM';
 
     // Add your code here
+
+    const fixedQuote = `${quote.slice(0, 1)}${quote.slice(1).toLowerCase()}`.replace('green eggs and ham', 'pizza')
+    const finalQuote = `${fixedQuote}.`;
 
     // Don't edit the code below here!
 
