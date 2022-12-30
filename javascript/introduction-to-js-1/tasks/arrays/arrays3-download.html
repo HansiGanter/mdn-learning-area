@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Arrays: Task 3</title>
     <style>
       p {
@@ -26,10 +27,17 @@
 
   </body>
   <script>
-    let myArray = [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
+    let myArray = ["Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri"];
 
     // Add your code here
 
+    myArray.pop()
+    myArray.push('Mia', 'Pia')
+    for (let i = 0; i < myArray.length; i++) {
+      myArray[i] = `${myArray[i]} (${i})`
+    }
+
+    const myString = myArray.join('-')
     // Don't edit the code below here!
 
     const section = document.querySelector('section');

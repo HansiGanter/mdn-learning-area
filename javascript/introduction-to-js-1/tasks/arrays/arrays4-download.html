@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Arrays: Task 4</title>
     <style>
       p {
@@ -26,9 +27,12 @@
 
   </body>
   <script>
-    const birds = [ "Parrots", "Falcons", "Eagles", "Emus", "Caracaras", "Egrets" ];
+    const birds = ["Parrots", "Falcons", "Eagles", "Emus", "Caracaras", "Egrets"];
 
     // Add your code here
+
+    birds.splice(birds.indexOf('Eagles'), 1)
+    const eBirds = birds.filter(e => e.startsWith('E'))
 
     // Don't edit the code below here!
 
