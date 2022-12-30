@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Math: Task 1</title>
     <style>
       p {
@@ -32,17 +33,26 @@
 
     // Add your code here
 
+    let num1 = 6
+    let num2 = 2
+    let num3 = 9
+    let num4 = 3
 
+    let sum12 = num1 + num2
+    let sub34 = num3 - num4
+
+    finalResult = sum12 * sub34
+    evenOddResult = finalResult % 2 === 0
 
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
 
     const para1 = document.createElement('p');
-    const finalResultCheck = finalResult === 48 ? `Yes, well done!` : `No, it is ${ finalResult }`;
-    para1.textContent = `Is the finalResult 48? ${ finalResultCheck }`;
+    const finalResultCheck = finalResult === 48 ? `Yes, well done!` : `No, it is ${finalResult}`;
+    para1.textContent = `Is the finalResult 48? ${finalResultCheck}`;
     const para2 = document.createElement('p');
-    const evenOddResultCheck = evenOddResult === 0 ? 'The final result is even!' : 'The final result is odd. Hrm.';
+    const evenOddResultCheck = evenOddResult ? 'The final result is even!' : 'The final result is odd. Hrm.';
     para2.textContent = evenOddResultCheck;
 
     section.appendChild(para1);
