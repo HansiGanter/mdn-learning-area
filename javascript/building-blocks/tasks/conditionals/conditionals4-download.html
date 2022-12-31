@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Conditionals: Task 4</title>
     <style>
       p {
@@ -33,6 +34,13 @@
     let pwdResult;
 
     // Add your code here
+
+    if (machineActive) {
+      machineResult = 'Machine is active. Trying login.'
+      pwdResult = pwd === 'cheese' ? 'login success' : 'login failed'
+    } else {
+      machineResult = 'Machine off'
+    }
 
     // Don't edit the code below here!
 

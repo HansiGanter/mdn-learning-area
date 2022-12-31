@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Conditionals: Task 1</title>
     <style>
       p {
@@ -21,13 +22,15 @@
     <section class="preview"></section>
 
   </body>
-  
-  
+
+
   <script>
     let season = 'summer';
     let response;
 
     // Add your code here
+
+    response = season === 'summer' ? 'it is summer' : season === 'winter' ? 'it is winter' : 'we don\'t know what it is'
 
     // Don't edit the code below here!
 
@@ -36,7 +39,7 @@
     let para1 = document.createElement('p');
     para1.textContent = response;
     section.appendChild(para1);
-    
+
   </script>
 
 </html>
