@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Functions: Task 2</title>
     <style>
       p {
@@ -37,11 +38,19 @@
 
     const x = 50;
     const y = 60;
-    const width = 100;
-    const height = 75;
+    const width = 150;
+    const height = 100;
     const color = 'blue';
 
     // Add your code here
+
+    const drawRectangle = (x, y, width, height, color) => {
+      ctx.fillStyle = 'white';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = color;
+      ctx.fillRect(x, y, width, height);
+    }
+    drawRectangle(x, y, width, height, color)
 
     // Don't edit the code below here!
 
