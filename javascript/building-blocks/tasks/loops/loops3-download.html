@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Loops: Task 3</title>
     <style>
       p {
@@ -30,8 +31,8 @@
     const para = document.createElement('p');
 
     function isPrime(num) {
-      for(let i = 2; i < num; i++) {
-        if(num % i === 0) {
+      for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
           return false;
         }
       }
@@ -41,6 +42,13 @@
 
 
     // Add your code here
+
+    while (i > 1) {
+      if (isPrime(i)) {
+        para.textContent += `${i}, \n`;
+      }
+      i--;
+    }
 
 
     // Don't edit the code below here!
