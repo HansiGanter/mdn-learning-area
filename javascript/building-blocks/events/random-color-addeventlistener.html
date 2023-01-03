@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -7,22 +8,26 @@
     <style>
       button {
         margin: 10px
-      };
+      }
+
+      ;
     </style>
   </head>
+
   <body>
     <button>Change color</button>
     <script>
       const btn = document.querySelector('button');
 
       function random(number) {
-        return Math.floor(Math.random() * (number+1));
+        return Math.floor(Math.random() * (number + 1));
       }
 
-      btn.addEventListener('click', () => {
+      btn.addEventListener('focus', () => {
         const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
         document.body.style.backgroundColor = rndCol;
       });
     </script>
   </body>
+
 </html>

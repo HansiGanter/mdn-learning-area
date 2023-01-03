@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Events: Task 2</title>
     <style>
       p {
@@ -29,29 +30,42 @@
 
     </canvas>
 
-  <script>
-    const canvas = document.querySelector('canvas');
-    const ctx = canvas.getContext('2d');
+    <script>
+      const canvas = document.querySelector('canvas');
+      const ctx = canvas.getContext('2d');
 
-    function drawCircle(x, y, size) {
-      ctx.fillStyle = 'white';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      function drawCircle(x, y, size) {
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.beginPath();
-      ctx.fillStyle = 'black';
-      ctx.arc(x, y, size, 0, 2 * Math.PI);
-      ctx.fill();
-    }
+        ctx.beginPath();
+        ctx.fillStyle = 'black';
+        ctx.arc(x, y, size, 0, 2 * Math.PI);
+        ctx.fill();
+      }
 
-    let x = 50;
-    let y = 50;
-    const size = 30;
+      let x = 50;
+      let y = 50;
+      const size = 30;
 
-    drawCircle(x, y, size);
+      drawCircle(x, y, size);
 
-    // Add your code here
+      // Add your code here
 
-  </script>
+      canvas.addEventListener('keydown', (e) => {
+        if (e.key == 'w') {
+          y -= 10;
+        } else if (e.key == 'a') {
+          x -= 10;
+        } else if (e.key == 's') {
+          y += 10;
+        } else if (e.key == 'd') {
+          x += 10;
+        }
+        drawCircle(x, y, size);
+      })
+
+    </script>
   </body>
-  
+
 </html>

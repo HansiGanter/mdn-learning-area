@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Events: Task 3</title>
     <style>
       p {
@@ -37,12 +38,16 @@
       <button data-color="purple">Purple</button>
     </div>
 
-  <script>
+    <script>
 
-  const buttonBar = document.querySelector('.button-bar');
+      const buttonBar = document.querySelector('.button-bar');
 
-  // Add your code here
+      // Add your code here
+      buttonBar.addEventListener('click', e => {
+        buttonBar.style.backgroundColor = e.target.textContent
+      })
 
-  </script>
+    </script>
   </body>
+
 </html>

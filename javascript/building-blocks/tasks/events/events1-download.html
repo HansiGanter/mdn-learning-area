@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Events: Task 1</title>
     <style>
       p {
@@ -28,12 +29,16 @@
 
     <button class="off">Machine is off</button>
 
-  <script>
-    const btn = document.querySelector('.off');
+    <script>
+      const btn = document.querySelector('.off');
 
-    // Add your code here
+      // Add your code here
+      btn.addEventListener('click', (e) => {
+        e.target.textContent = btn.textContent === 'Machine is off' ? 'Machine is on' : 'Machine is off'
+      })
 
-  </script>
+    </script>
 
   </body>
+
 </html>
