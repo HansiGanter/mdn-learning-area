@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Object basics: Task 3</title>
     <style>
       p {
@@ -27,13 +28,26 @@
   </body>
   <script>
     const cat = {
-      name : 'Bertie',
-      breed : 'Cymric',
-      color : 'white',
-      greeting: function() {
-        console.log('Meow!');
+      name: 'Bertie',
+      breed: 'Cymric',
+      color: 'white',
+      greeting: function () {
+        console.log(`Hello, said ${this.name} the ${this.breed}.`);
       }
     }
+
+    const cat2 = {
+      name: 'Arnold',
+      breed: 'Lion',
+      color: 'white',
+      greeting: function () {
+        console.log(`Hello, said ${this.name} the ${this.breed}.`);
+      }
+    }
+
+    console.log(cat.greeting())
+    console.log(cat2.greeting())
+
   </script>
 
 </html>

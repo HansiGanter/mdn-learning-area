@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Object basics: Task 2</title>
     <style>
       p {
@@ -30,6 +31,17 @@
 
     // Add your code here
 
+    const favBand = {
+      name: 'vize',
+      nationality: 'german',
+      genre: 'dance',
+      members: 2,
+      formed: 2015,
+      split: false,
+      albums: [{ name: 'album1', released: 2020 }, { name: 'album2', released: 2021 }]
+    }
+
+    bandInfo = `The band ${favBand.name} was founded in ${favBand.formed} and is active for ${new Date().getFullYear() - favBand.formed} years.`
 
     // Don't edit the code below here!
 
