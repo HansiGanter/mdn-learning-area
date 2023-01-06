@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>OOJS: Task 1</title>
     <style>
       p {
@@ -26,14 +27,24 @@
 
   </body>
   <script>
-  class Shape {
+    class Shape {
 
-    name;
-    sides;
-    sideLength;
+      constructor(name, sides, sideLength) {
+        this.name = name;
+        this.sides = sides;
+        this.sideLength = sideLength;
+      }
 
-  }
+      calcPerimeter() {
+        console.log(this.sides * this.sideLength)
+      }
+    }
 
+    const square = new Shape('square', 4, 5)
+    square.calcPerimeter()
+
+    const triangle = new Shape('triangle', 3, 3)
+    triangle.calcPerimeter()
   </script>
 
 </html>
