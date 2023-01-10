@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>JSON: Task 1</title>
     <style>
       p {
@@ -35,8 +36,8 @@
     const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json';
 
     fetch(requestURL)
-    .then(response => response.text())
-    .then(text => displayCatInfo(text))
+      .then(response => response.text())
+      .then(text => displayCatInfo(text))
 
     function displayCatInfo(catString) {
       let total = 0;
@@ -44,9 +45,22 @@
 
       // Add your code here
 
+      let catInfo = JSON.parse(catString)
+
+      for (const cat of catInfo) {
+        motherInfo += `${cat.name}, `
+        for (const kitten of cat.kittens) {
+          total++;
+          if (kitten.gender === 'm') {
+            male++
+          }
+        }
+      }
+
+      kittenInfo = `There are ${total} kittens. ${male} are male and ${total - male} are female.`
       // Don't edit the code below here!
 
-      para1.textContent = motherInfo;
+      para1.textContent = motherInfo.slice(0, -2) + '.'
       para2.textContent = kittenInfo;
     }
 
