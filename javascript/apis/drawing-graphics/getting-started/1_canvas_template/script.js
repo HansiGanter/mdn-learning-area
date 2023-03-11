@@ -49,3 +49,12 @@ ctx.font = "48px georgia";
 ctx.fillText("Canvas text", 50, 150);
 
 canvas.setAttribute("aria-label", "Canvas text");
+
+const image = new Image();
+image.src = "firefox.png";
+image.addEventListener("load", () => {
+    ctx.drawImage(image, 320, 20);
+    ctx.drawImage(image, 40, 40, 100, 100, 350, 350, 100, 100);
+});
+canvas.setAttribute("aria-label", "Firefox Logo");
+
