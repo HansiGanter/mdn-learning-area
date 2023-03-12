@@ -1,11 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en-gb">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<title>Video player example</title>
-  	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Video player example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
     <div class="player">
       <video controls>
@@ -16,12 +18,17 @@
       <div class="controls">
         <button class="play" data-icon="P" aria-label="play pause toggle"></button>
         <button class="stop" data-icon="S" aria-label="stop"></button>
-        <div class="timer"><div></div><span aria-label="timer">00:00</span></div>
+        <div class="timer">
+          <div></div><span aria-label="timer">00:00</span>
+        </div>
         <button class="rwd" data-icon="B" aria-label="rewind"></button>
         <button class="fwd" data-icon="F" aria-label="fast forward"></button>
       </div>
     </div>
     <p>Sintel &copy; copyright Blender Foundation | <a href="http://www.sintel.org">www.sintel.org</a>.</p>
+
+    <input id="inputfield" value="Hello" style="margin-top: 500px; width: 100%;"></input>
     <script src="custom-player.js"></script>
   </body>
+
 </html>
