@@ -31,7 +31,7 @@ forgetBtn.addEventListener('click', () => {
 // define the nameDisplayCheck() function
 function nameDisplayCheck() {
   // check whether the 'name' data item is stored in web Storage
-  if(localStorage.getItem('name')) {
+  if (localStorage.getItem('name')) {
     // If it is, display personalized greeting
     const name = localStorage.getItem('name');
     h1.textContent = `Welcome, ${name}`;
