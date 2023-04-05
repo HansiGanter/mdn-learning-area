@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Form structure: Task 1</title>
-    <style>
-      body {
-        background-color: #fff;
-        color: #333;
-        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-        padding: 1em;
-        margin: 0;
-      }
 
-      * {
-        box-sizing: border-box;
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Form structure: Task 1</title>
+  <style>
+    body {
+      background-color: #fff;
+      color: #333;
+      font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 1em;
+      margin: 0;
+    }
 
-  <body>
-    <form>
-      Name:
-      <input type="text" id="name" name="name">
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
 
-      Age:
-      <input type="number" id="age" name="age">
+<body>
+  <form>
+    <fieldset>
+      <legend>Personal details</legend>
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </p>
+      <p>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Comment information</legend>
+      <p>
+        <label for="comment">Comment:</label>
+        <input type="text" id="comment" name="comment">
+      </p>
 
-      Comment:
-      <input type="text" id="comment" name="comment">
-
-      Email:
-      <input type="email" id="email" name="email">
-    </form>
-  </body>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </p>
+    </fieldset>
+  </form>
+</body>
 
 </html>
